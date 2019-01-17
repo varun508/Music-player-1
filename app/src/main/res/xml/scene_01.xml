@@ -11,6 +11,22 @@
                 motion:touchAnchorId="@+id/button"
                 motion:touchAnchorSide="right"
                 motion:dragDirection="dragRight"/>
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:keyPositionType="parentRelative"
+                    motion:percentY="0.25"
+                    motion:framePosition="50"
+                    motion:target="@+id/button"/>
+
+            <KeyAttribute
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:rotation="-45"
+                    motion:framePosition="50"
+                    motion:target="@id/button" />
+
+        </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
